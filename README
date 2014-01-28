@@ -1,0 +1,53 @@
+ README 
+----------
+
+a- 
+- Najaf Husain Zaidi nhz2102
+- Rashmi Prithyani rp2614
+
+
+b-
+List of files -
+     python file 
+     csv file
+     Makefile
+     
+
+c-
+restaurants https://data.cityofnewyork.us/Health/Restaurant-Inspection-Results/qrhy-h7sn
+
+Restaurant inspection records
+ We downloaded the csv in comma seperated form and then used only the interesting columns of grade, action, borough zipcode etc.
+ We replaced values containing "," in them - specially in the school names.
+ We used an awk script to get only those lines having full info
+
+d-
+To run  follow the format recommended in the project description 
+       run.sh INTEGRATED-DATASET.csv 0.3 0.5
+
+e-
+Internal design
+- We used Python
+- The make_database(), basically collects all the transactions and puts them in a list.
+- The confidenceDatabase()was created for convenience for calculating the confidence. It contains all the transactions. Here each transaction split into a list of its items. Thus it Is a list of lists. 
+- The apriori() method implements the apriori algorithm.
+- The aprioriGen() method calculates the candidates from the previous large itemset.
+- First we calculate the candidate item sets using the calcCandidateItemsets() from these we find the large item sets that satisfy minimum support.
+- Also while making the candidate item sets, we check if the subsets of the candidate are present in the large item set of the previous iteration.
+- This is the "prune" step of the  "A Priori" algorithm.
+- From the large item set we calculate the association rules which are basically the subset of the large item set.
+- Then we finally output the association rules that satisfy the minimum confidence criteria.
+
+  
+  
+
+f-
+Interesting sample run
+ run.sh RIR.csv 0.1 0.5
+It suggests that American cuisene is most common in Manhattan and gets A grade.
+
+g-
+The reason we tried with smaller support value was because the dataset was very  large.
+
+
+

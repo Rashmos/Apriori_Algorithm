@@ -1,0 +1,50 @@
+==Large itemsets 0.1
+
+American      0.256052127483
+D_action      0.390744958446
+12      0.105702951779
+A_current      0.548394395089
+Borough_Queens      0.230787794688
+U_action      0.297983378331
+Z_current      0.199188524714
+Borough_Manhattan      0.399493205026
+F_action      0.196307636616
+10F      0.144376234936
+B_current      0.18544774431
+Borough_Brooklyn      0.236036742636
+Chinese      0.111660809364
+American D_action      0.109202250411
+American A_current      0.151525664037
+American Borough_Manhattan      0.130831535921
+D_action A_current      0.389824884237
+D_action Borough_Manhattan      0.159006923181
+12 A_current      0.104858293489
+A_current Borough_Queens      0.118930903935
+A_current Borough_Manhattan      0.225388014902
+A_current 10F      0.108659255796
+A_current Borough_Brooklyn      0.128388060152
+U_action Z_current      0.108010678894
+U_action Borough_Manhattan      0.11850857479
+U_action B_current      0.133048763933
+American D_action A_current      0.108991085838
+D_action A_current Borough_Manhattan      0.15872034269
+
+
+
+==High-confidence association rules 0.5 
+
+10F -> A_current      0.752611784371
+Z_current -> U_action      0.542253521127
+American -> Borough_Manhattan      0.510956644675
+Borough_Brooklyn -> A_current      0.54393251965
+Borough_Queens -> A_current      0.5153257957
+D_action -> A_current      0.997645333127
+(('A_current', 'Borough_Manhattan'), '->', 'D_action')      0.704209328783
+12 -> A_current      0.99200913242
+B_current -> U_action      0.717446116307
+(('American', 'A_current'), '->', 'D_action')      0.719291260203
+A_current -> D_action      0.710847681391
+American -> A_current      0.591776625825
+Borough_Manhattan -> A_current      0.564184852375
+(('D_action', 'Borough_Manhattan'), '->', 'A_current')      0.998197685449
+(('American', 'D_action'), '->', 'A_current')      0.998066298343
